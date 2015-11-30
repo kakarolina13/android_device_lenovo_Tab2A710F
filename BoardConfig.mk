@@ -42,8 +42,8 @@ BOARD_KERNEL_IMAGE_NAME := uImage	# pas sur, utile ?
 TARGET_USERIMAGES_USE_EXT4 := true
 GET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
-#TARGET_PREBUILT_KERNEL := device/lenovo/Tab2A710F/kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_Tab2A710F_defconfig	# pas teste
+TARGET_PREBUILT_KERNEL := device/lenovo/Tab2A710F/kernel
+#TARGET_KERNEL_CONFIG := cyanogenmod_Tab2A710F_defconfig	# pas teste
 
 
 # Ajouts divers...
