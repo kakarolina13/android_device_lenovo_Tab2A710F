@@ -1,0 +1,16 @@
+#
+# system.prop for Tab2A710F
+#
+
+ro.product.model=Tab2A7-10F
+ro.product.brand=Lenovo
+ro.product.name=Tab2A7-10F
+ro.product.device=Tab2A7-10F
+ro.product.board=Tab2A7-10F
+ro.product.custname=Lenovo TAB 2 A7-10F
+ro.product.manufacturer=LENOVO
+
+
+#ro.board.platform=mt8127
+#persist.sys.timezone=Europe/Paris
+

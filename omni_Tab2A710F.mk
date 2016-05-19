@@ -5,7 +5,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 #bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_MODEL="Tab2A710F" \
+    PRODUCT_MODEL="Tab2A7-10F" \
     TARGET_DEVICE="Tab2A710F"
 
 PRODUCT_NAME := omni_Tab2A710F
