@@ -39,6 +39,7 @@ TW_FLASH_FROM_STORAGE := true # flashes zips from their current location instead
 ###############
 # include Logcat daemon for help in debugging
 TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
 
 
 ### A tester
