@@ -1,3 +1,4 @@
+# Généré avec http://forum.xda-developers.com/showpost.php?p=66030554&postcount=11
 TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
@@ -25,10 +26,11 @@ TARGET_PREBUILT_KERNEL := device/lenovo/Tab2A710F/kernel
 #TW_DISABLE_TTF := true # TW_DISABLE_TTF support has been deprecated in TWRP.
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
 
-
 ############
 ## AJOUTS ##
 ############
+BOARD_CACHEIMAGE_PARTITION_SIZE := 132120576      # = 0x07e00000 = 128MB
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 TW_NO_REBOOT_BOOTLOADER := true
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone1/temp"
 TW_DEFAULT_EXTERNAL_STORAGE := true
