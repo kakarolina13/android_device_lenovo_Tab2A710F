@@ -1,8 +1,7 @@
-# Généré avec http://forum.xda-developers.com/showpost.php?p=66030554&postcount=11
 TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_VARIANT := cortex-a9
+TARGET_CPU_VARIANT := cortex-a7
 ##BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_MKBOOTIMG_ARGS := --base 80000000 --pagesize 2048 --kernel_offset 00008000 --ramdisk_offset 04000000 --tags_offset 00000100    --board 1438361675 
@@ -54,10 +53,10 @@ TW_INCLUDE_CRYPTO := true
 #TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := true	# Asian
 
-# Prevent TWRP from unmounting /system
-#TW_NEVER_UNMOUNT_SYSTEM := true
 
 ### Testé, rejeté
 ##################
 #DEVICE_RESOLUTION := 1024x600	# Apparemment inutile
+#TW_NEVER_UNMOUNT_SYSTEM := true # Prevent TWRP from unmounting /system
+
 
