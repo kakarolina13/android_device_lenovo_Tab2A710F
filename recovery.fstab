@@ -12,5 +12,5 @@
 /data		ext4	/dev/block/mmcblk0p7	flags=display="Data";backup=1;wipeduringfactoryreset
 /external_sd	auto	/dev/block/mmcblk1p1	flags=display="External SDcard";storage;removable;backup=0;settingsstorage
 /usbotg		auto	/dev/block/sda1		flags=display="USB-OTG";storage;removable;backup=0
-/sd-ext		auto	/dev/block/mmcblk1p2	flags=display="SD-Ext";storage;removable;backup=1;wipeduringfactoryreset
+/sd-ext		auto	/dev/block/mmcblk1p2	flags=display="SD-Ext";removable;backup=1;wipeduringfactoryreset
 
