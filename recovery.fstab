@@ -22,4 +22,4 @@
 /external_sd	auto	/dev/block/mmcblk1p1  /dev/block/mmcblk1	flags=display="External SDcard";storage;removable;backup=0;settingsstorage
 /usbotg		auto	/dev/block/sda1 /dev/block/sda  flags=display="USB-OTG";storage;removable;backup=0
 /sd-ext		auto	/dev/block/mmcblk1p2	flags=display="SD-Ext";removable;backup=1;wipeduringfactoryreset
-/sdcard datamedia /dev/null flags=display="Internal SDcard";storage;backup=0
+#/sdcard datamedia /dev/null flags=display="Internal SDcard";storage;backup=0
