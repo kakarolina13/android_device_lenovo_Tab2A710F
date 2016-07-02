@@ -68,3 +68,5 @@ TW_INCLUDE_NTFS_3G := true
 # Theme and graphics
 TW_THEME := portrait_mdpi
 #TW_CUSTOM_THEME := device/lenovo/Tab2A710F/recovery/twres
+
+USE_OPENGL_RENDERER    := true
