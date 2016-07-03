@@ -1,7 +1,8 @@
-#
 # TWRP
-#
-#RECOVERY_VARIANT := twrp
+RECOVERY_VARIANT := twrp
+
+TARGET_RECOVERY_FSTAB := device/lenovo/Tab2A710F/recovery/recovery-twrp.fstab
+
 TWHAVE_SELINUX := true
 #TW_USE_TOOLBOX := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
