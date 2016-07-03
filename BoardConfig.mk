@@ -5,7 +5,7 @@ USE_CAMERA_STUB := true
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_PLATFORM := unknown
+TARGET_BOARD_PLATFORM := mt8127
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
@@ -22,29 +22,42 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 3221225472	# = 3 GB on 5,5 GB max  (OK wit
 BOARD_CACHEIMAGE_PARTITION_SIZE := 132120576		# = 0x07e00000 = 128MB
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/mt_usb/gadget/lun%d/file"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
 
-BOARD_KERNEL_CMDLINE := 
-#BOARD_KERNEL_CMDLINE := androidboot.selinux=disabled
+# Kernel
+BOARD_KERNEL_CMDLINE :=
+#BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
-
 #TARGET_KERNEL_SOURCE := kernel/lenovo/Tab2A710F
 #TARGET_KERNEL_CONFIG := bitland8127_tb_l_defconfig
 TARGET_PREBUILT_KERNEL := device/lenovo/Tab2A710F/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
-RECOVERY_VARIANT := twrp
-#
+# Graphics
+USE_OPENGL_RENDERER := true
+BOARD_EGL_CFG := device/lenovo/Tab2A710F/egl.cfg
+
+
+# SELinux
+#BOARD_SEPOLICY_DIRS := \
+#       device/lenovo/Tab2A710F/sepolicy
+
+#BOARD_SEPOLICY_UNION := \
+#       app.te \
+#       system.te \
+
+
+
 # Debug
-#
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
-#
+
+
 # TWRP
-#
+#RECOVERY_VARIANT := twrp
 TWHAVE_SELINUX := true
 #TW_USE_TOOLBOX := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
@@ -68,5 +81,3 @@ TW_INCLUDE_NTFS_3G := true
 # Theme and graphics
 TW_THEME := portrait_mdpi
 #TW_CUSTOM_THEME := device/lenovo/Tab2A710F/recovery/twres
-
-USE_OPENGL_RENDERER    := true
