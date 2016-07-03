@@ -4,5 +4,13 @@
 
 ro.product.model=Tab2A7-10F
 
-#ro.board.platform=mt8127
+ro.board.platform=mt8127
 #persist.sys.timezone=Europe/Paris
+
+# adb
+ro.secure=0
+ro.adb.secure=0
+ro.debuggable=1
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
