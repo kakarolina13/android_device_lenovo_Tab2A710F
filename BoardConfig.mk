@@ -12,6 +12,7 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a7
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
+ARCH_ARM_HAVE_NEON := true      # TEST
 
 TARGET_BOOTLOADER_BOARD_NAME := Tab2A710F
 
@@ -38,6 +39,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 # Graphics
 USE_OPENGL_RENDERER := true
 BOARD_EGL_CFG := device/lenovo/Tab2A710F/egl.cfg
+TARGET_BOARD_PLATFORM_GPU := mali-450	# TEST
 
 
 # Debug
@@ -46,7 +48,6 @@ TARGET_USES_LOGD := true
 
 
 # TODO
-
 # Overlay
 # resource files located in overlay will replace standard repository resources
 #BOARD_USES_OVERLAY := true
