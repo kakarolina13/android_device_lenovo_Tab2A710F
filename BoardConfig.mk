@@ -32,13 +32,13 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 #TARGET_KERNEL_SOURCE := kernel/lenovo/Tab2A710F
 #TARGET_KERNEL_CONFIG := bitland8127_tb_l_defconfig
-TARGET_PREBUILT_KERNEL := device/lenovo/Tab2A710F/kernel
+TARGET_PREBUILT_KERNEL := device/lenovo/Tab2A710F/prebuilt/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Graphics
 USE_OPENGL_RENDERER := true
-BOARD_EGL_CFG := device/lenovo/Tab2A710F/egl.cfg
+BOARD_EGL_CFG := device/lenovo/Tab2A710F/prebuilt/egl.cfg
 TARGET_BOARD_PLATFORM_GPU := mali-450	# TEST
 
 
