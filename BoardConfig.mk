@@ -50,8 +50,9 @@ TARGET_USES_LOGD := true
 # TODO
 # Overlay
 # resource files located in overlay will replace standard repository resources
-#BOARD_USES_OVERLAY := true
-#DEVICE_PACKAGE_OVERLAYS += device/lenovo/Tab2A710F/overlay
+BOARD_USES_OVERLAY := true
+DEVICE_PACKAGE_OVERLAYS := \
+	device/lenovo/Tab2A710F/overlay
 
 # SELinux
 #BOARD_SEPOLICY_DIRS := \
