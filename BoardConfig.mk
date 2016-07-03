@@ -55,8 +55,8 @@ DEVICE_PACKAGE_OVERLAYS := \
 	device/lenovo/Tab2A710F/overlay
 
 # SELinux
-#BOARD_SEPOLICY_DIRS := \
-#       device/lenovo/Tab2A710F/sepolicy
+BOARD_SEPOLICY_DIRS := \
+       device/lenovo/Tab2A710F/sepolicy
 
 #BOARD_SEPOLICY_UNION := \
 #       app.te \
