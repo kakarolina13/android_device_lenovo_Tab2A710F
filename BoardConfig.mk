@@ -46,6 +46,9 @@ TARGET_BOARD_PLATFORM_GPU := mali-450	# TEST
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
+# libxlog
+TARGET_LDPRELOAD += libxlog.so
+
 
 # TODO
 # Overlay

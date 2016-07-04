@@ -25,7 +25,6 @@ PRODUCT_DEVICE := Tab2A710F
 TARGET_BUILD_VARIANT := eng
 TARGET_BUILD_TYPE := debug
 
-
 # init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.mt8127.rc:root/init.mt8127.rc \
@@ -39,3 +38,8 @@ PRODUCT_COPY_FILES += \
 # sh	# Is there an other way of avoiding - exec '/system/bin/sh' failed: No such file or directory (2) - ?
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/system/bin/sh:root/system/bin/sh \
+
+# libxlog
+PRODUCT_PACKAGES += \
+    libxlog
+
