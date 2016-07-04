@@ -17,15 +17,45 @@ system/lib/hw/lights.default.so
 system/lib/hw/sensors.mt8127.so
 system/lib/libcam.utils.so
 system/lib/libaed.so
-
 system/lib/libaudiocompensationfilter.so
 system/lib/libcamdrv.so
 system/lib/libaudiocomponentengine.so
 system/lib/libcamera_client_mtk.so
+system/lib/libmtk_mmutils.so
+system/lib/libaudiocustparam.so
+system/lib/libbwc.so
+system/lib/libaudiodcrflt.so
+system/lib/libaudiomtkdcremoval.so
+system/lib/libcameracustom.so
+system/lib/libaudiosetting.so
+system/lib/libmatv_cust.so
+system/lib/libblisrc.so
+
+system/lib/libbluetoothdrv.so
+system/lib/libcustom_nvram.so
+system/lib/libcvsd_mtk.so
+system/lib/libmsbc_mtk.so
+system/lib/libnvram.so
+system/lib/libspeech_enh_lib.so
+system/lib/libbessound_hd_mtk.so
+system/lib/libblisrc32.so
+system/lib/libmtklimiter.so
+system/lib/libmtkshifter.so
+system/lib/libmtk_drvb.so
+system/lib/libnvram_platform.so
+system/lib/libnvram_sec.so
+
+### hwcomposer FAIL if libtz_uree.so added
+###system/lib/libtz_uree.so
 
 
-# ?
+
+# hardware/mediatek ?
 system/lib/libcam_utils.so
+system/lib/libcam.exif.so
+###system/lib/hw/hwcomposer.mt8127.so
+
+
 
 
 
@@ -42,4 +72,5 @@ system/vendor/lib/mediadrm/libmockdrmcryptoplugin.so
 system/vendor/lib/soundfx/libswdap.so
 system/vendor/media/LMspeed_508.emd
 system/vendor/media/PFFprec_600.emd
+
 
