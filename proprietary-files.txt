@@ -1,5 +1,4 @@
 system/lib/libMali.so
-system/lib/libion.so
 system/lib/egl/libEGL_mali.so
 system/lib/egl/libGLESv1_CM_mali.so
 system/lib/egl/libGLESv2_mali.so
@@ -10,8 +9,6 @@ system/lib/libdpframework.so
 system/lib/libgralloc_extra.so
 system/lib/hw/gralloc.mt8127.so
 system/lib/hw/audio.primary.mt8127.so
-system/lib/hw/audio_policy.stub.so
-system/lib/hw/audio.r_submix.default.so
 system/lib/hw/camera.mt8127.so
 system/lib/hw/lights.default.so
 system/lib/hw/sensors.mt8127.so
@@ -30,7 +27,6 @@ system/lib/libcameracustom.so
 system/lib/libaudiosetting.so
 system/lib/libmatv_cust.so
 system/lib/libblisrc.so
-
 system/lib/libbluetoothdrv.so
 system/lib/libcustom_nvram.so
 system/lib/libcvsd_mtk.so
@@ -50,13 +46,19 @@ system/lib/libnvram_sec.so
 
 
 
-# hardware/mediatek ?
+# can be built from cm source ?
+system/lib/libion.so
+system/lib/hw/audio_policy.stub.so
+system/lib/hw/audio.r_submix.default.so
+system/vendor/lib/mediadrm/libdrmclearkeyplugin.so
+system/vendor/lib/mediadrm/libdrmclearkeyplugin.so
+system/vendor/lib/mediadrm/libmockdrmcryptoplugin.so
+
+
+# build from a hardware/mediatek repo instead ?
 system/lib/libcam_utils.so
 system/lib/libcam.exif.so
 ###system/lib/hw/hwcomposer.mt8127.so
-
-
-
 
 
 # Vendor
@@ -67,10 +69,7 @@ system/vendor/etc/dolby/ds1-default.xml
 system/vendor/lib/hw/audio.a2dp.blueangel.so
 system/vendor/lib/hw/bluetooth.blueangel.so
 system/vendor/lib/libstagefright_soft_ddpdec.so
-system/vendor/lib/mediadrm/libdrmclearkeyplugin.so
-system/vendor/lib/mediadrm/libmockdrmcryptoplugin.so
 system/vendor/lib/soundfx/libswdap.so
 system/vendor/media/LMspeed_508.emd
 system/vendor/media/PFFprec_600.emd
-
 
