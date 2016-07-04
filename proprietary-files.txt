@@ -1,21 +1,13 @@
-# Graphics
 system/lib/libMali.so
 system/lib/libion.so
 system/lib/egl/libEGL_mali.so
 system/lib/egl/libGLESv1_CM_mali.so
 system/lib/egl/libGLESv2_mali.so
 system/lib/libion_mtk.so
-
 system/lib/libmtk_mali_user.so
 system/lib/libm4u.so
-
-
-
-###
-
 system/lib/libdpframework.so
 system/lib/libgralloc_extra.so
-
 system/lib/hw/gralloc.mt8127.so
 system/lib/hw/audio.primary.mt8127.so
 system/lib/hw/audio_policy.stub.so
@@ -23,6 +15,19 @@ system/lib/hw/audio.r_submix.default.so
 system/lib/hw/camera.mt8127.so
 system/lib/hw/lights.default.so
 system/lib/hw/sensors.mt8127.so
+system/lib/libcam.utils.so
+system/lib/libaed.so
+
+system/lib/libaudiocompensationfilter.so
+system/lib/libcamdrv.so
+system/lib/libaudiocomponentengine.so
+system/lib/libcamera_client_mtk.so
+
+
+# ?
+system/lib/libcam_utils.so
+
+
 
 # Vendor
 system/vendor/app/Ds/Ds.apk
