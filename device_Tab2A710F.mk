@@ -43,3 +43,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libxlog
 
+# libdashplayer
+PRODUCT_PACKAGES += \
+    libdashplayer
+
