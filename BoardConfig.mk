@@ -47,17 +47,6 @@ TARGET_USES_LOGD := true
 # libxlog
 TARGET_LDPRELOAD += libxlog.so
 
-
-# MTK Hardware		# TEST, don't know which are needed or not
-BOARD_HAS_MTK_HARDWARE := true
-MTK_HARDWARE := true
-COMMON_GLOBAL_CFLAGS += -DMTK_HARDWARE -DADD_LEGACY_ACQUIRE_BUFFER_SYMBOL
-COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
-BOARD_CONNECTIVITY_VENDOR := MediaTek
-BOARD_USES_MTK_AUDIO := true
-BOARD_USES_LEGACY_MTK_AV_BLOB := true
-
-
 # Overlay
 # resource files located in overlay will replace standard repository resources
 BOARD_USES_OVERLAY := true
@@ -71,3 +60,19 @@ BOARD_SEPOLICY_DIRS := \
 #BOARD_SEPOLICY_UNION := \
 #       app.te \
 #       system.te \
+
+
+# MTK Hardware		# TEST, don't know which are needed or not
+BOARD_HAS_MTK_HARDWARE := true
+MTK_HARDWARE := true
+COMMON_GLOBAL_CFLAGS += -DMTK_HARDWARE -DADD_LEGACY_ACQUIRE_BUFFER_SYMBOL
+COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
+BOARD_CONNECTIVITY_VENDOR := MediaTek
+BOARD_USES_MTK_AUDIO := true
+BOARD_USES_LEGACY_MTK_AV_BLOB := true
+
+
+# USB OTG and External Sdcard   # TEST
+TARGET_USES_EXFAT := true
+TARGET_USES_NTFS := true
+
