@@ -65,6 +65,9 @@ system/lib/libcam.exif.so
 system/vendor/app/Ds/Ds.apk
 system/vendor/app/DsUI/DsUI.apk
 # 16/01/2015 system/vendor/etc/audio_effects.conf
+system/vendor/etc/audio_effects.conf
+system/etc/media_codecs.xml
+
 system/vendor/etc/dolby/ds1-default.xml
 system/vendor/lib/hw/audio.a2dp.blueangel.so
 system/vendor/lib/hw/bluetooth.blueangel.so
